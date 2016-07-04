@@ -27,7 +27,7 @@ $(function(){
     //Loading禁用touch
     var loadingContainer=$(".loading");
     loadingContainer.on("touchstart",function(e){
-        e.preventDefault();
+        //e.preventDefault();
     });
 
 //-----------------------适配--------------------
@@ -85,7 +85,7 @@ $(function(){
     }
     function Complete() {
         loadingContainer.hide();
-        sectionContainer.css("display","block");
+        sectionContainer.css("visibility","inherit");
         page1_logo.addClass("fadeInDownBig");
         setTimeout(function(){
             page1_text.addClass("rubberBand")

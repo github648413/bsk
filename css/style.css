@@ -5,7 +5,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 html,body{background-color: #000;font-family: Simhei;}
 .op-1{opacity: 1;}
 .op-0{opacity: 0;}
-.section-container{display: none}
 .section-container .section .box{overflow:inherit;position: relative;width: 750px;height: 1334px;transform-origin: 50% 0;-webkit-transform-origin: 50% 0;}
 /*------------------------Loading------------------------*/
 .loading{height:1336px;width: 750px;position:relative;z-index: 9999;text-align: center}
@@ -39,7 +38,7 @@ html,body{background-color: #000;font-family: Simhei;}
 }
 
 /*------------------------PageOne------------------------*/
-.section-container{z-index: 999;position: relative;visibility: hidden;}
+.section-container{z-index: 999;position: relative;visibility: hidden}
 .section-container .section-1{background-color:#75c9f5;}
 .section-container .section-1 .box .logo-big{opacity: 0;background: url("../images/logo-big.png") no-repeat center;width: 384px;height: 330px;position: absolute;top: 180px;left: 50%;margin-left: -192px;}
 .section-container .section-1 .box .text-1{background: url("../images/text1.png") no-repeat center;width: 624px;height: 204px;position: absolute;bottom: 414px;left: 50%;margin-left: -312px;z-index: 100;}
