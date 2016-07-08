@@ -9,6 +9,9 @@ html,body{background-color: #51c9d0;font-family: Simhei;}
 .section-container .section{overflow:hidden;}
 .section-container .section .content{overflow:hidden;}
 .section-container .section .box{overflow:hidden; position: relative;width: 750px;height: 1334px;transform-origin: 50% 0;-webkit-transform-origin: 50% 0;}
+.section-container .content div,.cloud-1,.cloud-2{
+
+}
 /*------------------------Loading------------------------*/
 .loading{height:1336px;width: 750px;position:relative;z-index: 99;text-align: center;background-color: #000}
 .loading .logo{background: url("../images/logo1.png") no-repeat center;height: 109px;width: 387px; margin: 0 auto;transform: scale(0.5);-webkit-transform: scale(0.5);}
@@ -36,7 +39,7 @@ html,body{background-color: #51c9d0;font-family: Simhei;}
 
 /*------------------------Sun-Cloud-----------------------*/
 .sun{height:40px;width:40px;background-color: #fed900;border-radius: 50%;position: absolute;left: 84px;top: 94px;}
-.cloud-1{background:url("../images/could-1.png") no-repeat center;height: 79px;width: 142px;position: absolute;top: 103px;left: 910px;}
+.cloud-1{background:url("../images/could-1.png") no-repeat center;height: 79px;width: 142px;position: absolute;top: 103px;}
 .cloud-2{background:url("../images/could-2.png") no-repeat center;height: 64px;width: 115px;position: absolute;bottom: 540px;}
 /*------------------------PageOne------------------------*/
 .section-container .section-1 .buding{background: url("../images/buding.png") no-repeat center;height: 232px;width: 750px;position: absolute;bottom: 0}
@@ -49,7 +52,7 @@ html,body{background-color: #51c9d0;font-family: Simhei;}
 /*------------------------PageTwo------------------------*/
 .section-container .section-2 .bottom-cloud{background: url("../images/bottom-cloud.png") no-repeat center;height: 206px;width: 750px;bottom: 0;position: absolute;}
 .section-container .section-2 .box .bubble{background: url("../images/bubble.png") no-repeat center;height: 134px;width: 478px; position: absolute;top: 240px;left: 88px;}
-.section-container .section-2 .box .people-balloon{background: url("../images/people-balloon.png") no-repeat center;height: 463px;width: 207px;position: absolute;top:1340px;right: 40px;}
+.section-container .section-2 .box .people-balloon{background: url("../images/people-balloon.png") no-repeat center;height: 463px;width: 207px;position: absolute;right: 40px;transform:translateY(1340px);-webkit-transform:translateY(1340px);}
 .section-container .section-2 .box .company-profile{background: url("../images/company-profile.png") no-repeat center;height: 43px;width: 188px;top: 434px;left: 96px;position: absolute;}
 .section-container .section-2 .box .text-contanier{height: 546px;width: 551px;position: absolute;background-color: #fff;top: 500px;left: 83px;border-radius: 10px;font-size: 30px;color: #615f5f;padding-top: 56px;padding-left: 50px;padding-right: 50px;overflow: hidden;box-sizing: border-box;line-height: 40px;text-align:justify;letter-spacing: 5px;}
 .section-container .section-2 .box .text-bg{background: url("../images/text-bg.png") no-repeat center;height: 524px;width: 629px;position: absolute;top: 544px;left: 59px;}
@@ -103,8 +106,13 @@ html,body{background-color: #51c9d0;font-family: Simhei;}
 
 .cloud-f1{animation: cloud-1 8s infinite;-webkit-animation:cloud-1 8s infinite;animation-direction:normal;-webkit-animation-direction:normal; animation-timing-function:linear; -webkit-animation-timing-function:linear;}
 .cloud-f2{animation: cloud-1 13s infinite;-webkit-animation:cloud-1 13s infinite;animation-direction:normal;-webkit-animation-direction:normal; animation-timing-function:linear; -webkit-animation-timing-function:linear;}
-@keyframes cloud-1 { 0%{left:910px;} 100%{left:-160px; } }
-@-webkit-keyframes cloud-1 { 0%{left:910px;} 100%{left:-160px; } }
+
+@keyframes cloud-1{ 0%{transform: translateX(910px)} 100%{transform: translateX(-160px)} }
+@-webkit-keyframes cloud-1{ 0%{transform: translateX(910px)} 100%{transform: translateX(-160px)} }
+
+
+
+
 @-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}
     50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}
     70%{-webkit-transform:scale(.9);transform:scale(.9)}
@@ -129,8 +137,9 @@ html,body{background-color: #51c9d0;font-family: Simhei;}
 .bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}
 .ballon-f1{animation: ballon-f 2.5s;-webkit-animation:ballon-f 2.5s;animation-timing-function:linear;
  -webkit-animation-timing-function:linear;animation-fill-mode:forwards;-webkit-animation-fill-mode: forwards;}
-@keyframes ballon-f { 0%{top:1340px;} 100%{top:40px;} }
-@-webkit-keyframes ballon-f { 0%{top:1340px;} 100%{top: 40px;} }
+@keyframes ballon-f { 0%{-webkit-transform:translateY(1340px);transform:translateY(1340px);} 100%{-webkit-transform:translateY(40px);transform:translateY(40px);} }
+@-webkit-keyframes ballon-f { 0%{-webkit-transform:translateY(1340px);transform:translateY(1340px);} 100%{-webkit-transform:translateY(40px);transform:translateY(40px);} }
+
 @-webkit-keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}
     60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}
     80%{-webkit-transform:translateX(10px);transform:translateX(10px)}
