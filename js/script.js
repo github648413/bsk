@@ -3,7 +3,7 @@
  */
 $(function(){
     var sectionContainer=$("#section-container");
-    var  page1_logo=$(".section-1 .logo"),page1_text=$(".section-1 .text");
+    var  page1_logo=$(".section-1 .logo"),page1_text=$(".section-1 .text")
     //-----------------------适配--------------------
     var height=$(window).height();
     sectionContainer.find("section .content").css("height",height);
